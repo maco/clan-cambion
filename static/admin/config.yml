@@ -6,7 +6,7 @@ backend:
 publish_mode: editorial_workflow
 media_folder: "static/img/uploads"
 public_folder: "/img/uploads"
-site_url: http://localhost:1313
+# site_url: http://localhost:1313
 collections:
   - name: "blogs" # Used in routes, e.g., /admin/collections/blog
     label: "Blog" # Used in the UI

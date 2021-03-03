@@ -1,7 +1,7 @@
 ---
 title: "Our Pennsic Encampment"
 date: 2021-02-28T19:34:43-05:00
-draft: true
+draft: false
 image: pennsic-gate.jpg
 ---
 

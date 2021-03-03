@@ -1,7 +1,7 @@
 ---
 title: "Our History"
 date: 2021-02-28T19:23:07-05:00
-draft: true
+draft: false
 ---
 
 Long, long ago, the [Society for Creative Anachronism](https://sca.org/) had not yet reached Maryland. It was a West Coast phenomenon. Yet, there were medievalists getting together and playing anyway in the [Markland Medieval Mercenary Militia](https://www.markland.org/). When the SCA finally reached Maryland, there was conflict. Was there enough room for both groups?

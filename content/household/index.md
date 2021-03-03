@@ -1,7 +1,7 @@
 ---
 title: "What is a Household?"
 date: 2021-02-28T19:53:08-05:00
-draft: true
+draft: false
 ---
 
 Much has been written on SCA households before. In short, we're a group of friends who share the SCA as a hobby and like to do things together.

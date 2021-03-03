@@ -1,7 +1,7 @@
 ---
 title: "Our Activities"
 date: 2021-02-28T19:33:31-05:00
-draft: true
+draft: false
 image: music.jpg
 imageAlt: Bob, Sue, Igor, and Fevronia performing with voice and harp
 imageCredit: Photo by Cassair Warwick

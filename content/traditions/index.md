@@ -1,7 +1,7 @@
 ---
 title: "Traditions"
 date: 2021-02-28T20:41:38-05:00
-draft: true
+draft: false
 ---
 
 Clan Cambion's highest rule is "don't be a turkey."
