@@ -6,6 +6,7 @@ backend:
 publish_mode: editorial_workflow
 media_folder: "static/img/uploads"
 public_folder: "/img/uploads"
+site_url: http://localhost:1313
 collections:
   - name: "blogs" # Used in routes, e.g., /admin/collections/blog
     label: "Blog" # Used in the UI
@@ -16,7 +17,92 @@ collections:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Featured Image", name: "image", widget: "image", required: false}
-      - {label: "Image Description", name: "imageAlt", widget: "string", required: false, comment: "So blind people konw what it's a picture of"}
+      - {label: "Image Description", name: "imageAlt", widget: "string", required: false, comment: "So blind people know what it's a picture of"}
       - {label: "Image Credit", name: "imageCredit", widget: "string", required: false}
       - {label: "Author", name: "author", widget: "string"}
+      - {label: "Body", name: "body", widget: "markdown"}
+
+  - name: "activities" # Used in routes, e.g., /admin/collections/blog
+    label: "Page - Our Activities" # Used in the UI
+    folder: "content/activities/" # The path to the folder where the documents are stored
+    create: false # Allow users to create new documents in this collection
+    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Featured Image", name: "image", widget: "image", required: false}
+      - {label: "Image Description", name: "imageAlt", widget: "string", required: false, comment: "So blind people know what it's a picture of"}
+      - {label: "Image Credit", name: "imageCredit", widget: "string", required: false}
+      - {label: "Body", name: "body", widget: "markdown"}
+  - name: "history" # Used in routes, e.g., /admin/collections/blog
+    label: "Page - Our History" # Used in the UI
+    folder: "content/history/" # The path to the folder where the documents are stored
+    create: false # Allow users to create new documents in this collection
+    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Featured Image", name: "image", widget: "image", required: false}
+      - {label: "Image Description", name: "imageAlt", widget: "string", required: false, comment: "So blind people know what it's a picture of"}
+      - {label: "Image Credit", name: "imageCredit", widget: "string", required: false}
+      - {label: "Body", name: "body", widget: "markdown"}
+  - name: "household" # Used in routes, e.g., /admin/collections/blog
+    label: "Page - What's a Household?" # Used in the UI
+    folder: "content/household/" # The path to the folder where the documents are stored
+    create: false # Allow users to create new documents in this collection
+    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Featured Image", name: "image", widget: "image", required: false}
+      - {label: "Image Description", name: "imageAlt", widget: "string", required: false, comment: "So blind people know what it's a picture of"}
+      - {label: "Image Credit", name: "imageCredit", widget: "string", required: false}
+      - {label: "Body", name: "body", widget: "markdown"}
+  - name: "members" # Used in routes, e.g., /admin/collections/blog
+    label: "Page - Our Members" # Used in the UI
+    folder: "content/members/" # The path to the folder where the documents are stored
+    create: false # Allow users to create new documents in this collection
+    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Featured Image", name: "image", widget: "image", required: false}
+      - {label: "Image Description", name: "imageAlt", widget: "string", required: false, comment: "So blind people know what it's a picture of"}
+      - {label: "Image Credit", name: "imageCredit", widget: "string", required: false}
+      - {label: "Body", name: "body", widget: "markdown"}
+  - name: "pennsic" # Used in routes, e.g., /admin/collections/blog
+    label: "Page - Our Pennsic Encampment" # Used in the UI
+    folder: "content/pennsic/" # The path to the folder where the documents are stored
+    create: false # Allow users to create new documents in this collection
+    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Featured Image", name: "image", widget: "image", required: false}
+      - {label: "Image Description", name: "imageAlt", widget: "string", required: false, comment: "So blind people know what it's a picture of"}
+      - {label: "Image Credit", name: "imageCredit", widget: "string", required: false}
+      - {label: "Body", name: "body", widget: "markdown"}
+  - name: "traditions" # Used in routes, e.g., /admin/collections/blog
+    label: "Page - Our Traditions" # Used in the UI
+    folder: "content/traditions/" # The path to the folder where the documents are stored
+    create: false # Allow users to create new documents in this collection
+    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Featured Image", name: "image", widget: "image", required: false}
+      - {label: "Image Description", name: "imageAlt", widget: "string", required: false, comment: "So blind people know what it's a picture of"}
+      - {label: "Image Credit", name: "imageCredit", widget: "string", required: false}
+      - {label: "Body", name: "body", widget: "markdown"}
+  - name: "values" # Used in routes, e.g., /admin/collections/blog
+    label: "Page - Our Values" # Used in the UI
+    folder: "content/values/" # The path to the folder where the documents are stored
+    create: false # Allow users to create new documents in this collection
+    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Featured Image", name: "image", widget: "image", required: false}
+      - {label: "Image Description", name: "imageAlt", widget: "string", required: false, comment: "So blind people know what it's a picture of"}
+      - {label: "Image Credit", name: "imageCredit", widget: "string", required: false}
       - {label: "Body", name: "body", widget: "markdown"}
