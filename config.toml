@@ -1,5 +1,5 @@
 # Site settings
-baseURL = "https://clancambion.org/"
+baseURL = "https://www.clancambion.org/"
 languageCode = "en-us"
 title = "Clan Cambion"
 theme = "forty"
