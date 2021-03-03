@@ -1,0 +1,21 @@
+{{ define "main" }}
+<!-- for blogs root -->
+<main id="main">
+  <section id="one">
+    <div class="inner">
+      <h1>{{ .Content }}</h1>
+      {{ range .Paginator.Pages }}
+        <article class="contents">
+          <h2 style="margin-bottom: 0.2em;"><a href="{{.Permalink}}">{{.Title}}</a></h2>
+          <div class="metadata" style="display: block; font-size: 0.85em;">
+            Posted: {{.Date.Format "2006-01-02"}} | By: {{ .Params.author }}
+          </div>
+          <img src="/img/{{.Params.image}}"/>
+          {{.Summary}}
+          <div><a href="{{.Permalink}}">Read More</a></div>
+        </article>
+      {{ end }}
+    </div>
+  </section>
+</main>
+{{ end }}
