@@ -1,5 +1,6 @@
 backend:
-  name: git-gateway
+  name: github
+  repo: maco/clan-cambion
   branch: main
 publish_mode: editorial_workflow
 media_folder: "static/img/uploads"
